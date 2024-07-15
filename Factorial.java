@@ -1,18 +1,14 @@
-
-package Recursion;
+import java.util.*;
 public class Factorial {
     public static void main(String[] args) {
-        //input from user 
-        //int n=ob.nextInt();
-        System.out.println(fact(5));
+        Scanner ob=new Scanner(System.in);
+        System.out.println("enter the number");
+        int n=ob.nextInt();
+        int s=1;
+        for(int i=1;i<=n;i++)
+        {
+            s=s*i;
+        }
+        System.out.println("factorial="+s);
     }
-    static int fact(int n){
-        if(n==1)
-            return 1;
-        else 
-            return n*fact(n-1);
-                    
-    
-    }
-    
 }
